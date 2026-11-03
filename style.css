@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #1f2937;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    height: 70px;
+
+    background: #172554;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar button {
+    background: transparent;
+    border: none;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.navbar button:hover {
+    color: #93c5fd;
+}
+
+
+/* HOME */
+
+.hero {
+    height: 550px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #172554,
+            #2563eb
+        );
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* BUTTONS */
+
+.primary-btn {
+    background: #2563eb;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 12px 22px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+}
+
+.secondary-btn {
+    background: #e5e7eb;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+}
+
+
+/* EVENTS */
+
+.events-section {
+    padding: 60px;
+}
+
+.events-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.event-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.event-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.08);
+}
+
+.event-card h3 {
+    margin: 20px 0;
+}
+
+.event-card p {
+    margin: 10px 0;
+    color: #64748b;
+}
+
+.category {
+    display: inline-block;
+
+    background: #dbeafe;
+    color: #1d4ed8;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+
+
+/* EVENT DETAILS */
+
+.details-section {
+    display: flex;
+
+    justify-content: center;
+
+    padding: 70px;
+}
+
+.details-card {
+    width: 700px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.1);
+}
+
+.details-card h2 {
+    margin-bottom: 25px;
+}
+
+.details-card p {
+    margin: 15px 0;
+}
+
+
+/* FORMS */
+
+.form-section {
+    min-height: 600px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px;
+}
+
+.form-card {
+    width: 500px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.1);
+}
+
+.form-card h2 {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.form-card label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+.form-card input,
+.form-card select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+.form-card .primary-btn {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.small-text {
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+
+/* DASHBOARD */
+
+.dashboard {
+    padding: 60px;
+}
+
+.dashboard h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dashboard-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 30px;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.dashboard-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card h3 {
+    margin-bottom: 15px;
+}
+
+.dashboard-card p {
+    color: #64748b;
+    margin-bottom: 20px;
+}
